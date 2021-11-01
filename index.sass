@@ -1,0 +1,170 @@
+@font-face 
+ font-family: Zen
+ src: url('./src/assets/ZenMaruGothic-Medium.ttf')
+
+*
+ font-family: Zen
+
+.main-page
+ background-color: white
+ height: 100vh
+ padding: 25px !important
+
+button
+ background-color: white
+ border-radius: 4px
+ min-height: 35px
+ min-width: 100px
+ margin-right: 5px
+ margin-top: 5px
+ border-style: solid
+ border-color: #80d7dd
+ font-size: 16pt
+
+.red
+ background-color: #f95f4a
+
+.yellow
+ background-color: #f7f780
+
+.blue
+ background-color: #70babf
+    
+.container 
+ position: relative
+
+img
+ width: 100% !important
+ max-width: 600px
+ max-height: 500px !important
+ object-fit: contain !important
+
+.fade-enter-active,
+.fade-leave-active 
+ transition: all 0.9s ease
+ overflow: hidden
+ visibility: visible
+ position: absolute
+ width:100% !important
+ opacity: 1
+
+.fade-enter,
+.fade-leave-to 
+ visibility: hidden
+ width:80% !important
+ position: absolute
+ opacity: 0
+
+.bg
+ background-image: linear-gradient(to right, rgba(255,255,255, 0.6) 0 100%), (url('./src/assets/bg.jpg'))
+ height: auto
+ object-fit: cover
+
+.center
+ text-align: center
+ display: flex
+ justify-content: center
+ align-items: center
+ width: 100%
+ overflow-x: auto
+
+@media only screen and ( max-width:1000px  )
+ .center
+  overflow-x: scroll
+ .brand-name
+  font-size: 14pt
+
+.prev,
+.next 
+ position: absolute !important
+ top: 40%
+ width: auto
+ padding: 16px
+ font-weight: bold
+ font-size: 18px
+ transition: 0.7s ease
+ text-decoration: none
+ user-select: none
+ color: black !important
+ &:hover
+     color: white !important
+     background-color: #70babf !important
+
+.next 
+ right: 0 !important
+ border-radius: 0 5px 5px 0 !important
+
+.prev 
+ left: 0
+ border-radius: 5px 0px 0px 5px !important
+
+.pointer
+ cursor: pointer
+ text-decoration: none
+
+.fade-text
+ transition: 0.3s ease
+ border-color: #70babf
+ border-style: solid
+
+.tokopedia
+    &:hover
+     color: white
+     background-color: #346E2F
+     .logo-store
+      filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%)
+
+.shopee
+    &:hover
+     color: white
+     background-color: #E93B2A
+     .logo-store
+      filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%)
+
+.facebook
+    &:hover
+     color: white
+     background-color: #385490
+     .logo-store
+      filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%)
+
+.whatsapp
+    &:hover
+     color: black
+     background-color: #52e56c
+
+.logo
+ max-width: 50px
+ max-height: 50px
+ margin-bottom: -12px
+
+.mini-image
+ width: 200px !important
+ height: 200px !important
+ object-fit: fit !important
+ margin-right: 10px
+ border-radius: 15px 0px 30px 0px !important
+ border-width: 2px
+ border-color: #80d7dd
+ border-style: solid
+
+.logo-store
+ width: 20px !important
+ height: 20px !important
+ object-fit: fit !important
+ margin-bottom: -4px
+
+.header
+ display: flex
+ align-items: center
+ justify-content: space-between
+ margin-top: -30px
+
+.brand-name
+ color: #80d7dd
+
+.title
+ font-size: 20pt
+
+.whitening
+ filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%)
